@@ -1,0 +1,18 @@
+<h1>Restaurants#index</h1>
+<p>Find me in app/views/restaurants/index.html.erb</p>
+
+
+
+<div class="row">
+<div class="col-6">
+<% @restaurants.each do |restaurant| %>
+  <%= restaurant.name %>
+  <br>
+
+  <div class="col-6">
+  <%= render "showy", restaurant: restaurant %>
+  </div>
+  <% end %>
+</div>
+
+</div>
